@@ -70,6 +70,7 @@ def web_development_papers(message):
 def maths_papers(message):
     papersObj.maths_papers(message)
 
+
 @bot.message_handler(commands=['English1_Papers'])
 def english1_papers(message):
     papersObj.english1_papers(message)
@@ -77,12 +78,7 @@ def english1_papers(message):
 
 @bot.message_handler(commands=['2nd_sem_papers'])
 def second_sem_papers(message):
-    markup = types.ReplyKeyboardMarkup(row_width=2)
-    itembtn1 = types.KeyboardButton('a')
-    itembtn2 = types.KeyboardButton('v')
-    itembtn3 = types.KeyboardButton('d')
-    markup.add(itembtn1, itembtn2, itembtn3)
-    bot.send_message(message.chat.id, "Choose one letter:", reply_markup=markup)
+    papersObj.second_sem_papers(message)
 
 
 @bot.message_handler(func=lambda message: True)
