@@ -9,6 +9,7 @@ bot = telebot.TeleBot(API_KEY)
 
 papersObj = pastpapers.PastPapers()
 
+
 @bot.message_handler(commands=['start', ])
 def send_start(message):
     bot.send_message(message.chat.id, "Hello " + message.chat.first_name + "! Type /help to get started.")
@@ -29,17 +30,26 @@ def send_help(message):
 def select_sem(message):
     papersObj.select_sem(message)
 
+
 @bot.message_handler(commands=['1st_sem_papers'])
 def first_sem_papers(message):
     papersObj.first_sem_papers(message)
+
 
 @bot.message_handler(commands=['PCA'])
 def pca_papers(message):
     papersObj.pca_papers(message)
 
+
 @bot.message_handler(commands=['Computer_Hardware'])
 def com_hardware_papers(message):
     papersObj.com_hardware_papers(message)
+
+
+@bot.message_handler(commands=['Structured_Programming'])
+def structured_programming_papers(message):
+    papersObj.structured_programming_papers(message)
+
 
 @bot.message_handler(commands=['2nd_sem_papers'])
 def second_sem_papers(message):
@@ -49,6 +59,7 @@ def second_sem_papers(message):
     itembtn3 = types.KeyboardButton('d')
     markup.add(itembtn1, itembtn2, itembtn3)
     bot.send_message(message.chat.id, "Choose one letter:", reply_markup=markup)
+
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
