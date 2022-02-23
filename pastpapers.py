@@ -26,7 +26,8 @@ class PastPapers():
         itembtn5 = types.KeyboardButton('/DBMS_Papers')
         itembtn6 = types.KeyboardButton('/Web_Development_Papers')
         itembtn7 = types.KeyboardButton('/Mathematics_Papers')
-        markup.add(itembtn1, itembtn2, itembtn3, itembtn4, itembtn5, itembtn6, itembtn7)
+        itembtn8 = types.KeyboardButton('/English1_Papers')
+        markup.add(itembtn1, itembtn2, itembtn3, itembtn4, itembtn5, itembtn6, itembtn7, itembtn8)
         bot.send_message(message.chat.id, "Choose a subject:", reply_markup=markup)
 
     def pca_papers(self, message):
@@ -76,6 +77,19 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dro/2018-dro-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dro/2018-dro.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dro/2019-dro.pdf']
+        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
+
+        for file in files:
+            bot.send_document(message.chat.id, file)
+
+    def dbms_papers(self, message):
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dbms/2016-dbms-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dbms/2016-dbms.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dbms/2017-dbms-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dbms/2017-dbms.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dbms/2018-dbms-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dbms/2019-dbms.pdf']
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
         for file in files:

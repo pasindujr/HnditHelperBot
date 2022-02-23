@@ -50,9 +50,15 @@ def com_hardware_papers(message):
 def structured_programming_papers(message):
     papersObj.structured_programming_papers(message)
 
+
 @bot.message_handler(commands=['DRO_Papers'])
 def dro_papers(message):
     papersObj.dro_papers(message)
+
+
+@bot.message_handler(commands=['DBMS_Papers'])
+def dbms_papers(message):
+    papersObj.dbms_papers(message)
 
 
 @bot.message_handler(commands=['2nd_sem_papers'])
