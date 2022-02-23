@@ -94,3 +94,17 @@ class PastPapers():
 
         for file in files:
             bot.send_document(message.chat.id, file)
+
+    def web_development_papers(self, message):
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/web_dev/2016-web-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/web_dev/2016-web.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/web_dev/2017-web-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/web_dev/2017-web.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/web_dev/2018-web-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/web_dev/2018-web.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/web_dev/2019-web.pdf']
+        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
+
+        for file in files:
+            bot.send_document(message.chat.id, file)
