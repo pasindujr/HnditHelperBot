@@ -70,6 +70,10 @@ def web_development_papers(message):
 def maths_papers(message):
     papersObj.maths_papers(message)
 
+@bot.message_handler(commands=['English1_Papers'])
+def english1_papers(message):
+    papersObj.english1_papers(message)
+
 
 @bot.message_handler(commands=['2nd_sem_papers'])
 def second_sem_papers(message):
