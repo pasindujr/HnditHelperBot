@@ -36,19 +36,23 @@ def first_sem_papers(message):
     papersObj.first_sem_papers(message)
 
 
-@bot.message_handler(commands=['PCA'])
+@bot.message_handler(commands=['PCA_Papers'])
 def pca_papers(message):
     papersObj.pca_papers(message)
 
 
-@bot.message_handler(commands=['Computer_Hardware'])
+@bot.message_handler(commands=['Computer_Hardware_Papers'])
 def com_hardware_papers(message):
     papersObj.com_hardware_papers(message)
 
 
-@bot.message_handler(commands=['Structured_Programming'])
+@bot.message_handler(commands=['Structured_Programming_Papers'])
 def structured_programming_papers(message):
     papersObj.structured_programming_papers(message)
+
+@bot.message_handler(commands=['DRO_Papers'])
+def dro_papers(message):
+    papersObj.dro_papers(message)
 
 
 @bot.message_handler(commands=['2nd_sem_papers'])

@@ -19,13 +19,13 @@ class PastPapers():
 
     def first_sem_papers(self, message):
         markup = types.ReplyKeyboardMarkup(row_width=2)
-        itembtn1 = types.KeyboardButton('/PCA')
-        itembtn2 = types.KeyboardButton('/Computer_Hardware')
-        itembtn3 = types.KeyboardButton('/Structured_Programming')
-        itembtn4 = types.KeyboardButton('/DRO')
-        itembtn5 = types.KeyboardButton('/DBMS')
-        itembtn6 = types.KeyboardButton('/Web_Development')
-        itembtn7 = types.KeyboardButton('/Mathematics')
+        itembtn1 = types.KeyboardButton('/PCA_Papers')
+        itembtn2 = types.KeyboardButton('/Computer_Hardware_Papers')
+        itembtn3 = types.KeyboardButton('/Structured_Programming_Papers')
+        itembtn4 = types.KeyboardButton('/DRO_Papers')
+        itembtn5 = types.KeyboardButton('/DBMS_Papers')
+        itembtn6 = types.KeyboardButton('/Web_Development_Papers')
+        itembtn7 = types.KeyboardButton('/Mathematics_Papers')
         markup.add(itembtn1, itembtn2, itembtn3, itembtn4, itembtn5, itembtn6, itembtn7)
         bot.send_message(message.chat.id, "Choose a subject:", reply_markup=markup)
 
@@ -62,6 +62,20 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/structured-programming/2018-structured-programming-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/structured-programming/2018-structured-programming.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/structured-programming/2019-structured-programming.pdf']
+        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
+
+        for file in files:
+            bot.send_document(message.chat.id, file)
+
+    def dro_papers(self, message):
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dro/2016-dro-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dro/2016-dro.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dro/2017-dro-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dro/2017-dro.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dro/2018-dro-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dro/2018-dro.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/dro/2019-dro.pdf']
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
         for file in files:
