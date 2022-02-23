@@ -66,6 +66,11 @@ def web_development_papers(message):
     papersObj.web_development_papers(message)
 
 
+@bot.message_handler(commands=['Maths_Papers'])
+def maths_papers(message):
+    papersObj.maths_papers(message)
+
+
 @bot.message_handler(commands=['2nd_sem_papers'])
 def second_sem_papers(message):
     markup = types.ReplyKeyboardMarkup(row_width=2)
