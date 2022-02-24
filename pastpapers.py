@@ -201,3 +201,18 @@ class PastPapers():
 
         for file in files:
             bot.send_document(message.chat.id, file)
+
+    def dcn_papers(self, message):
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/dcn/2016-dcn-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/dcn/2016-dcn.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/dcn/2017-dcn-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/dcn/2017-dcn.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/dcn/2018-dcn-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/dcn/2018-dcn.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/dcn/2019-dcn.pdf']
+
+        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
+
+        for file in files:
+            bot.send_document(message.chat.id, file)
