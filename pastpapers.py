@@ -156,3 +156,18 @@ class PastPapers():
 
         for file in files:
             bot.send_document(message.chat.id, file)
+
+    def multimedia_papers(self, message):
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/multimedia/2016-multimedia-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/multimedia/2016-multimedia.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/multimedia/2017-multimedia-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/multimedia/2017-multimedia.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/multimedia/2018-multimedia-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/multimedia/2018-multimedia.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/multimedia/2019-multimedia.pdf']
+
+        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
+
+        for file in files:
+            bot.send_document(message.chat.id, file)

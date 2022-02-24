@@ -85,6 +85,9 @@ def second_sem_papers(message):
 def oop_papers(message):
     papersObj.oop_papers(message)
 
+@bot.message_handler(commands=['Multimedia_Papers'])
+def multimedia_papers(message):
+    papersObj.multimedia_papers(message)
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
