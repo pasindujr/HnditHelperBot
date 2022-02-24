@@ -230,3 +230,15 @@ class PastPapers():
 
         for file in files:
             bot.send_document(message.chat.id, file)
+
+    def english2_papers(self, message):
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/english/2016-english2.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/english/2017-english2-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/english/2017-english2.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/english/2019-english2.pdf']
+
+        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
+
+        for file in files:
+            bot.send_document(message.chat.id, file)
