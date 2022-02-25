@@ -354,3 +354,15 @@ class PastPapers():
 
         for file in files:
             bot.send_document(message.chat.id, file)
+
+    def forth_sem_papers(self, message):
+        markup = types.ReplyKeyboardMarkup(row_width=2)
+        itembtn1 = types.KeyboardButton('/Computer_Architecture_Papers')
+        itembtn2 = types.KeyboardButton('/Enterprise_Architecture_Papers')
+        itembtn3 = types.KeyboardButton('/FOSS_Papers')
+        itembtn4 = types.KeyboardButton('/Mobile_Papers')
+        itembtn5 = types.KeyboardButton('/Professional_Issues_Papers')
+        itembtn6 = types.KeyboardButton('/Web_Papers')
+        itembtn7 = types.KeyboardButton('/English4_Papers')
+        markup.add(itembtn1, itembtn2, itembtn3, itembtn4, itembtn5, itembtn6, itembtn7)
+        bot.send_message(message.chat.id, "Choose a subject:", reply_markup=markup)
