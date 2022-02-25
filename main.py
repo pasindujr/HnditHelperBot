@@ -116,6 +116,11 @@ def english2_papers(message):
     papersObj.english2_papers(message)
 
 
+@bot.message_handler(commands=['3rd_sem_papers'])
+def third_sem_papers(message):
+    papersObj.third_sem_papers(message)
+
+
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     bot.send_message(message.chat.id, 'Invalid Input! Please send me a valid command which starts with "/".')
