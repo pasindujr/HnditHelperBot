@@ -325,3 +325,18 @@ class PastPapers():
 
         for file in files:
             bot.send_document(message.chat.id, file)
+
+    def ooad_papers(self, message):
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/ooad/2015-ooad.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/ooad/2016-ooad-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/ooad/2017-ooad-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/ooad/2018-ooad-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/ooad/2019-ooad-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/ooad/2019-ooad.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/ooad/2020-ooad.pdf']
+
+        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
+
+        for file in files:
+            bot.send_document(message.chat.id, file)
