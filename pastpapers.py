@@ -355,9 +355,9 @@ class PastPapers():
         for file in files:
             bot.send_document(message.chat.id, file)
 
-    def forth_sem_papers(self, message):
+    def fourth_sem_papers(self, message):
         markup = types.ReplyKeyboardMarkup(row_width=2)
-        itembtn1 = types.KeyboardButton('/Computer_Architecture_Papers')
+        itembtn1 = types.KeyboardButton('/Com_Architecture_Papers')
         itembtn2 = types.KeyboardButton('/Enterprise_Architecture_Papers')
         itembtn3 = types.KeyboardButton('/FOSS_Papers')
         itembtn4 = types.KeyboardButton('/Mobile_Papers')
@@ -366,3 +366,18 @@ class PastPapers():
         itembtn7 = types.KeyboardButton('/English4_Papers')
         markup.add(itembtn1, itembtn2, itembtn3, itembtn4, itembtn5, itembtn6, itembtn7)
         bot.send_message(message.chat.id, "Choose a subject:", reply_markup=markup)
+
+    def com_architecture_papers(self, message):
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2016-comarchitecture-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2016-comarchitecture.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2017-comarchitecture-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2017-comarchitecture.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2018-comarchitecture-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2018-comarchitecture.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2019-comarchitecture.pdf']
+
+        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
+
+        for file in files:
+            bot.send_document(message.chat.id, file)
