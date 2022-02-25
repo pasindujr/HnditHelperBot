@@ -157,8 +157,13 @@ def english3_papers(message):
 
 
 @bot.message_handler(commands=['4th_sem_papers'])
-def forth_sem_papers(message):
-    shootPapers.forth_sem_papers(message)
+def fourth_sem_papers(message):
+    shootPapers.fourth_sem_papers(message)
+
+
+@bot.message_handler(commands=['Com_Architecture_Papers'])
+def com_architecture_papers(message):
+    shootPapers.com_architecture_papers(message)
 
 
 @bot.message_handler(func=lambda message: True)
