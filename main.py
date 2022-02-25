@@ -7,7 +7,7 @@ load_dotenv()
 API_KEY = os.getenv('API_KEY')
 bot = telebot.TeleBot(API_KEY)
 
-papersObj = pastpapers.PastPapers()
+shootPapers = pastpapers.PastPapers()
 
 
 @bot.message_handler(commands=['start', ])
@@ -28,97 +28,102 @@ def send_help(message):
 
 @bot.message_handler(commands=['papers'])
 def select_sem(message):
-    papersObj.select_sem(message)
+    shootPapers.select_sem(message)
 
 
 @bot.message_handler(commands=['1st_sem_papers'])
 def first_sem_papers(message):
-    papersObj.first_sem_papers(message)
+    shootPapers.first_sem_papers(message)
 
 
 @bot.message_handler(commands=['PCA_Papers'])
 def pca_papers(message):
-    papersObj.pca_papers(message)
+    shootPapers.pca_papers(message)
 
 
 @bot.message_handler(commands=['Computer_Hardware_Papers'])
 def com_hardware_papers(message):
-    papersObj.com_hardware_papers(message)
+    shootPapers.com_hardware_papers(message)
 
 
 @bot.message_handler(commands=['Structured_Programming_Papers'])
 def structured_programming_papers(message):
-    papersObj.structured_programming_papers(message)
+    shootPapers.structured_programming_papers(message)
 
 
 @bot.message_handler(commands=['DRO_Papers'])
 def dro_papers(message):
-    papersObj.dro_papers(message)
+    shootPapers.dro_papers(message)
 
 
 @bot.message_handler(commands=['DBMS_Papers'])
 def dbms_papers(message):
-    papersObj.dbms_papers(message)
+    shootPapers.dbms_papers(message)
 
 
 @bot.message_handler(commands=['Web_Development_Papers'])
 def web_development_papers(message):
-    papersObj.web_development_papers(message)
+    shootPapers.web_development_papers(message)
 
 
 @bot.message_handler(commands=['Maths_Papers'])
 def maths_papers(message):
-    papersObj.maths_papers(message)
+    shootPapers.maths_papers(message)
 
 
 @bot.message_handler(commands=['English1_Papers'])
 def english1_papers(message):
-    papersObj.english1_papers(message)
+    shootPapers.english1_papers(message)
 
 
 @bot.message_handler(commands=['2nd_sem_papers'])
 def second_sem_papers(message):
-    papersObj.second_sem_papers(message)
+    shootPapers.second_sem_papers(message)
 
 
 @bot.message_handler(commands=['OOP_Papers'])
 def oop_papers(message):
-    papersObj.oop_papers(message)
+    shootPapers.oop_papers(message)
 
 
 @bot.message_handler(commands=['Multimedia_Papers'])
 def multimedia_papers(message):
-    papersObj.multimedia_papers(message)
+    shootPapers.multimedia_papers(message)
 
 
 @bot.message_handler(commands=['DSA_Papers'])
 def dsa_papers(message):
-    papersObj.dsa_papers(message)
+    shootPapers.dsa_papers(message)
 
 
 @bot.message_handler(commands=['SAD_Papers'])
 def sad_papers(message):
-    papersObj.sad_papers(message)
+    shootPapers.sad_papers(message)
 
 
 @bot.message_handler(commands=['DCN_Papers'])
 def dcn_papers(message):
-    papersObj.dcn_papers(message)
+    shootPapers.dcn_papers(message)
 
 
 @bot.message_handler(commands=['Stats_Papers'])
 def stats_papers(message):
-    papersObj.stats_papers(message)
+    shootPapers.stats_papers(message)
 
 
 @bot.message_handler(commands=['English2_Papers'])
 def english2_papers(message):
-    papersObj.english2_papers(message)
+    shootPapers.english2_papers(message)
 
 
 @bot.message_handler(commands=['3rd_sem_papers'])
 def third_sem_papers(message):
-    papersObj.third_sem_papers(message)
+    shootPapers.third_sem_papers(message)
+
+
+@bot.message_handler(commands=['OSCS_Papers'])
+def oscs_papers(message):
+    shootPapers.oscs_papers(message)
 
 
 @bot.message_handler(func=lambda message: True)

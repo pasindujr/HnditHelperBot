@@ -254,3 +254,15 @@ class PastPapers():
         itembtn7 = types.KeyboardButton('/English3_Papers')
         markup.add(itembtn1, itembtn2, itembtn3, itembtn4, itembtn5, itembtn6, itembtn7)
         bot.send_message(message.chat.id, "Choose a subject:", reply_markup=markup)
+
+    def oscs_papers(self, message):
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2015-oscs.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2016-oscs.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2019-oscs.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2020-oscs.pdf']
+
+        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
+
+        for file in files:
+            bot.send_document(message.chat.id, file)
