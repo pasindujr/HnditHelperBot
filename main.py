@@ -166,6 +166,11 @@ def com_architecture_papers(message):
     shootPapers.com_architecture_papers(message)
 
 
+@bot.message_handler(commands=['Enterprise_Architecture_Papers'])
+def enterprise_architecture_papers(message):
+    shootPapers.enterprise_architecture_papers(message)
+
+
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     bot.send_message(message.chat.id, 'Invalid Input! Please send me a valid command which starts with "/".')

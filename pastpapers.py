@@ -381,3 +381,19 @@ class PastPapers():
 
         for file in files:
             bot.send_document(message.chat.id, file)
+
+    def enterprise_architecture_papers(self, message):
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2015-enterprise-architecture-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2015-enterprise-architecture.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2016-enterprise-architecture-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2016-enterprise-architecture.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2017-enterprise-architecture-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2017-enterprise-architecture.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2018-enterprise-architecture-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2019-enterprise-architecture.pdf']
+
+        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
+
+        for file in files:
+            bot.send_document(message.chat.id, file)
