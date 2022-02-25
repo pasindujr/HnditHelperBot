@@ -126,6 +126,11 @@ def oscs_papers(message):
     shootPapers.oscs_papers(message)
 
 
+@bot.message_handler(commands=['ITPM_Papers'])
+def itpm_papers(message):
+    shootPapers.itpm_papers(message)
+
+
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     bot.send_message(message.chat.id, 'Invalid Input! Please send me a valid command which starts with "/".')
