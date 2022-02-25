@@ -141,6 +141,11 @@ def rad_papers(message):
     shootPapers.rad_papers(message)
 
 
+@bot.message_handler(commands=['Principles_of_SE_Papers'])
+def se_papers(message):
+    shootPapers.se_papers(message)
+
+
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     bot.send_message(message.chat.id, 'Invalid Input! Please send me a valid command which starts with "/".')
