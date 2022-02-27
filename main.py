@@ -195,6 +195,10 @@ def web_papers(message):
 def english4_papers(message):
     shootPapers.english4_papers(message)
 
+@bot.message_handler(commands=['heroku'])
+def english4_papers(message):
+    shootPapers.english4_papers(message)
+
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
