@@ -191,6 +191,11 @@ def web_papers(message):
     shootPapers.web_papers(message)
 
 
+@bot.message_handler(commands=['English4_Papers'])
+def english4_papers(message):
+    shootPapers.english4_papers(message)
+
+
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     bot.send_message(message.chat.id, 'Invalid Input! Please send me a valid command which starts with "/".')
