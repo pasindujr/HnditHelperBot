@@ -3,7 +3,6 @@
 
 # HNDIT Helper Telegram Bot
 </div>
-<hr>
 
 ### Cloning the repository
 

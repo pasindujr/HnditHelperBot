@@ -17,13 +17,21 @@ def send_start(message):
 
 @bot.message_handler(commands=['about'])
 def send_about(message):
-    bot.send_message(message.chat.id, "Designed by @pasindujr")
+    bot.send_message(message.chat.id,
+                     "Designed by @pasindujr from ATI Kegalle. You can see my source code on GitHub \n https://github.com/pasindujr/HnditHelperBot")
 
 
 @bot.message_handler(commands=['help', ])
 def send_help(message):
     bot.send_message(message.chat.id,
                      'Welcome to HNDIT Helper Bot. Here you can find past papers and notes for HNDIT subjects and exams. Do you need /notes or /papers? You can type or select a option.')
+
+
+@bot.message_handler(commands=['changelog'])
+def send_changeblog(message):
+    bot.send_message(message.chat.id,
+                     "Inspect my commit history to see how I've been improved over time ⬇ \n "
+                     "https://github.com/pasindujr/HnditHelperBot/commits/master")
 
 
 @bot.message_handler(commands=['papers'])
@@ -194,6 +202,13 @@ def web_papers(message):
 @bot.message_handler(commands=['English4_Papers'])
 def english4_papers(message):
     shootPapers.english4_papers(message)
+
+
+@bot.message_handler(commands=['notes'])
+def select_sem(message):
+    bot.send_message(message.chat.id, "Hi " + message.chat.first_name + ", my master is working hard to give me the "
+                                                                        "ability to provide notes but that feature is "
+                                                                        "not done yet. Sorry! 😐")
 
 
 @bot.message_handler(func=lambda message: True)
