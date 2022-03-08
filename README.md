@@ -1,7 +1,9 @@
-<div align="center>"
-# HNDIT Helper Telegram Bot
+<div align="center">
 <img width="30%" src="https://d2cbg94ubxgsnp.cloudfront.net/Pictures/480x270/9/9/3/512993_shutterstock_715962319converted_920340.png">
+
+# HNDIT Helper Telegram Bot
 </div>
+<hr>
 
 ### Cloning the repository
 
