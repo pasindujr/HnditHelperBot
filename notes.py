@@ -147,7 +147,8 @@ class Notes():
 
     def oscs_notes(self, message):
         files = ['https://drive.google.com/uc?export=download&id=1rVW3iKtuqjvK3MpQBkYa-csIyWimnrnT',
-                 'https://drive.google.com/uc?export=download&id=1VMX66W2uaef4WZ0S9LKvFIG2xrr2spAa']
+                 'https://drive.google.com/uc?export=download&id=1lxemRO1tGVgzHNtRuscDSJaaeKQUIijl',
+                 'https://drive.google.com/uc?export=download&id=1dEsAhZ-BWghAO5nRiNo_uc6t-AK-WiIM']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
