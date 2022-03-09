@@ -126,7 +126,8 @@ class Notes():
             bot.send_document(message.chat.id, file)
 
     def dcn_notes(self, message):
-        files = ['https://drive.google.com/uc?export=download&id=1_8rVM86B23srpzUt7tCWhnWwsb1t877j']
+        files = ['https://drive.google.com/uc?export=download&id=1Ulmzrhv5mo1YfVwA-h44rJHfvrXV7wXo',
+                 'https://drive.google.com/uc?export=download&id=1tFgO_rrlYiz-aAcwAW_vyoMV1qOSdtnG']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
