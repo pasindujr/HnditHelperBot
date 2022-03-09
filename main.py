@@ -2,12 +2,14 @@ from telebot import *
 import os
 from dotenv import load_dotenv
 import pastpapers
+import notes
 
 load_dotenv()
 API_KEY = os.getenv('API_KEY')
 bot = telebot.TeleBot(API_KEY)
 
 shootPapers = pastpapers.PastPapers()
+shootNotes = notes.Notes()
 
 
 @bot.message_handler(commands=['start', ])
@@ -33,6 +35,7 @@ def send_changeblog(message):
                      "Inspect my commit history to see how I've been improved over time ⬇ \n "
                      "https://github.com/pasindujr/HnditHelperBot/commits/master")
 
+# Below code handles past papers
 
 @bot.message_handler(commands=['papers'])
 def select_sem(message):
@@ -203,17 +206,181 @@ def web_papers(message):
 def english4_papers(message):
     shootPapers.english4_papers(message)
 
+# Below code handles notes.
 
 @bot.message_handler(commands=['notes'])
 def select_sem(message):
-    bot.send_message(message.chat.id, "Hi " + message.chat.first_name + ", my master is working hard to give me the "
-                                                                        "ability to provide notes but that feature is "
-                                                                        "not done yet. Sorry! 😐")
+    shootNotes.select_sem(message)
+
+
+@bot.message_handler(commands=['1st_sem_notes'])
+def first_sem_notes(message):
+    shootNotes.first_sem_notes(message)
+
+
+@bot.message_handler(commands=['PCA_notes'])
+def pca_notes(message):
+    shootNotes.pca_notes(message)
+
+
+@bot.message_handler(commands=['Computer_Hardware_notes'])
+def com_hardware_notes(message):
+    shootNotes.com_hardware_notes(message)
+
+
+@bot.message_handler(commands=['Structured_Programming_notes'])
+def structured_programming_notes(message):
+    shootNotes.structured_programming_notes(message)
+
+
+@bot.message_handler(commands=['DRO_notes'])
+def dro_notes(message):
+    shootNotes.dro_notes(message)
+
+
+@bot.message_handler(commands=['DBMS_notes'])
+def dbms_notes(message):
+    shootNotes.dbms_notes(message)
+
+
+@bot.message_handler(commands=['Web_Development_notes'])
+def web_development_notes(message):
+    shootNotes.web_development_notes(message)
+
+
+@bot.message_handler(commands=['Maths_notes'])
+def maths_notes(message):
+    shootNotes.maths_notes(message)
+
+
+@bot.message_handler(commands=['English1_notes'])
+def english1_notes(message):
+    shootNotes.english1_notes(message)
+
+
+@bot.message_handler(commands=['2nd_sem_notes'])
+def second_sem_notes(message):
+    shootNotes.second_sem_notes(message)
+
+
+@bot.message_handler(commands=['OOP_notes'])
+def oop_notes(message):
+    shootNotes.oop_notes(message)
+
+
+@bot.message_handler(commands=['Multimedia_notes'])
+def multimedia_notes(message):
+    shootNotes.multimedia_notes(message)
+
+
+@bot.message_handler(commands=['DSA_notes'])
+def dsa_notes(message):
+    shootNotes.dsa_notes(message)
+
+
+@bot.message_handler(commands=['SAD_notes'])
+def sad_notes(message):
+    shootNotes.sad_notes(message)
+
+
+@bot.message_handler(commands=['DCN_notes'])
+def dcn_notes(message):
+    shootNotes.dcn_notes(message)
+
+
+@bot.message_handler(commands=['Stats_notes'])
+def stats_notes(message):
+    shootNotes.stats_notes(message)
+
+
+@bot.message_handler(commands=['English2_notes'])
+def english2_notes(message):
+    shootNotes.english2_notes(message)
+
+
+@bot.message_handler(commands=['3rd_sem_notes'])
+def third_sem_notes(message):
+    shootNotes.third_sem_notes(message)
+
+
+@bot.message_handler(commands=['OSCS_notes'])
+def oscs_notes(message):
+    shootNotes.oscs_notes(message)
+
+
+@bot.message_handler(commands=['ITPM_notes'])
+def itpm_notes(message):
+    shootNotes.itpm_notes(message)
+
+
+@bot.message_handler(commands=['Econ_notes'])
+def econ_notes(message):
+    shootNotes.econ_notes(message)
+
+
+@bot.message_handler(commands=['RAD_notes'])
+def rad_notes(message):
+    shootNotes.rad_notes(message)
+
+
+@bot.message_handler(commands=['Principles_of_SE_notes'])
+def se_notes(message):
+    shootNotes.se_notes(message)
+
+
+@bot.message_handler(commands=['OOAD_notes'])
+def ooad_notes(message):
+    shootNotes.ooad_notes(message)
+
+
+@bot.message_handler(commands=['English3_notes'])
+def english3_notes(message):
+    shootNotes.english3_notes(message)
+
+
+@bot.message_handler(commands=['4th_sem_notes'])
+def fourth_sem_notes(message):
+    shootNotes.fourth_sem_notes(message)
+
+
+@bot.message_handler(commands=['Com_Architecture_notes'])
+def com_architecture_notes(message):
+    shootNotes.com_architecture_notes(message)
+
+
+@bot.message_handler(commands=['Enterprise_Architecture_notes'])
+def enterprise_architecture_notes(message):
+    shootNotes.enterprise_architecture_notes(message)
+
+
+@bot.message_handler(commands=['FOSS_notes'])
+def foss_notes(message):
+    shootNotes.foss_notes(message)
+
+
+@bot.message_handler(commands=['Mobile_notes'])
+def mobile_notes(message):
+    shootNotes.mobile_notes(message)
+
+
+@bot.message_handler(commands=['Professional_Issues_notes'])
+def professional_issues_notes(message):
+    shootNotes.professional_issues_notes(message)
+
+
+@bot.message_handler(commands=['Web_notes'])
+def web_notes(message):
+    shootNotes.web_notes(message)
+
+
+@bot.message_handler(commands=['English4_notes'])
+def english4_notes(message):
+    shootNotes.english4_notes(message)
 
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
-    bot.send_message(message.chat.id, 'Invalid Input! Please send me a valid command which starts with "/".')
+    bot.send_message(message.chat.id, 'Invalid command! Please send me a valid command which starts with "/". Try /help')
 
 
 bot.infinity_polling()
