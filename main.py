@@ -35,6 +35,7 @@ def send_changeblog(message):
                      "Inspect my commit history to see how I've been improved over time ⬇ \n "
                      "https://github.com/pasindujr/HnditHelperBot/commits/master")
 
+
 # Below code handles past papers
 
 @bot.message_handler(commands=['papers'])
@@ -206,6 +207,7 @@ def web_papers(message):
 def english4_papers(message):
     shootPapers.english4_papers(message)
 
+
 # Below code handles notes.
 
 @bot.message_handler(commands=['notes'])
@@ -253,11 +255,6 @@ def maths_notes(message):
     shootNotes.maths_notes(message)
 
 
-@bot.message_handler(commands=['English1_notes'])
-def english1_notes(message):
-    shootNotes.english1_notes(message)
-
-
 @bot.message_handler(commands=['2nd_sem_notes'])
 def second_sem_notes(message):
     shootNotes.second_sem_notes(message)
@@ -286,16 +283,6 @@ def sad_notes(message):
 @bot.message_handler(commands=['DCN_notes'])
 def dcn_notes(message):
     shootNotes.dcn_notes(message)
-
-
-@bot.message_handler(commands=['Stats_notes'])
-def stats_notes(message):
-    shootNotes.stats_notes(message)
-
-
-@bot.message_handler(commands=['English2_notes'])
-def english2_notes(message):
-    shootNotes.english2_notes(message)
 
 
 @bot.message_handler(commands=['3rd_sem_notes'])
@@ -333,11 +320,6 @@ def ooad_notes(message):
     shootNotes.ooad_notes(message)
 
 
-@bot.message_handler(commands=['English3_notes'])
-def english3_notes(message):
-    shootNotes.english3_notes(message)
-
-
 @bot.message_handler(commands=['4th_sem_notes'])
 def fourth_sem_notes(message):
     shootNotes.fourth_sem_notes(message)
@@ -373,14 +355,10 @@ def web_notes(message):
     shootNotes.web_notes(message)
 
 
-@bot.message_handler(commands=['English4_notes'])
-def english4_notes(message):
-    shootNotes.english4_notes(message)
-
-
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
-    bot.send_message(message.chat.id, 'Invalid command! Please send me a valid command which starts with "/". Try /help')
+    bot.send_message(message.chat.id,
+                     'Invalid command! Please send me a valid command which starts with "/". Try /help')
 
 
 bot.infinity_polling()
