@@ -183,8 +183,7 @@ class Notes():
             bot.send_document(message.chat.id, file)
 
     def se_notes(self, message):
-        files = ['https://drive.google.com/uc?export=download&id=1J6h6Us_02j2otFhQYhXYN3grr1sJ_kl1',
-                 'https://drive.google.com/uc?export=download&id=1-AzrkYcdxKanOSJpZkk09mrisPlVWwoY']
+        files = ['https://drive.google.com/uc?export=download&id=1J6h6Us_02j2otFhQYhXYN3grr1sJ_kl1']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
