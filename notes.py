@@ -146,8 +146,8 @@ class Notes():
         bot.send_message(message.chat.id, "Choose a subject:", reply_markup=markup)
 
     def oscs_notes(self, message):
-        files = ['https://drive.google.com/uc?export=download&id=1VMX66W2uaef4WZ0S9LKvFIG2xrr2spAa',
-                 'https://drive.google.com/uc?export=download&id=1rVW3iKtuqjvK3MpQBkYa-csIyWimnrnT']
+        files = ['https://drive.google.com/uc?export=download&id=1rVW3iKtuqjvK3MpQBkYa-csIyWimnrnT',
+                 'https://drive.google.com/uc?export=download&id=1VMX66W2uaef4WZ0S9LKvFIG2xrr2spAa']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
@@ -182,8 +182,8 @@ class Notes():
             bot.send_document(message.chat.id, file)
 
     def se_notes(self, message):
-        files = ['https://drive.google.com/uc?export=download&id=1-AzrkYcdxKanOSJpZkk09mrisPlVWwoY',
-                 'https://drive.google.com/uc?export=download&id=1J6h6Us_02j2otFhQYhXYN3grr1sJ_kl1']
+        files = ['https://drive.google.com/uc?export=download&id=1J6h6Us_02j2otFhQYhXYN3grr1sJ_kl1',
+                 'https://drive.google.com/uc?export=download&id=1-AzrkYcdxKanOSJpZkk09mrisPlVWwoY']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
@@ -235,7 +235,7 @@ class Notes():
             bot.send_document(message.chat.id, file)
 
     def mobile_notes(self, message):
-        files = ['https://drive.google.com/uc?export=download&id=19qCf9eS3B26TFt-34k00dr3IMKFJ7PSu']
+        files = ['https://drive.google.com/uc?export=download&id=1yFPXXYUFGkcjO5JNJTJogbORLIR3G9Tt']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
