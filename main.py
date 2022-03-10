@@ -21,7 +21,7 @@ def send_start(message):
 @bot.message_handler(commands=['about'])
 def send_about(message):
     bot.send_message(message.chat.id,
-                     "Designed by @pasindujr from ATI Kegalle. The sole purpose of mine is to support the education of HNDIT students.\n Do you think something is broken or have an amazing idea to improve me, please let my master know.\n You can see my source code on GitHub.\n https://github.com/pasindujr/HnditHelperBot")
+                     "💡 Designed by @pasindujr from ATI Kegalle. The sole purpose of mine is to support the education of HNDIT students.\n💡 Do you think something is broken or have an amazing idea to improve me, please let my master know.\n💡 You can see my source code on GitHub.\nhttps://github.com/pasindujr/HnditHelperBot")
 
 
 @bot.message_handler(commands=['help', ])
@@ -33,8 +33,7 @@ def send_help(message):
 @bot.message_handler(commands=['changelog'])
 def send_changelog(message):
     bot.send_message(message.chat.id,
-                     "Inspect my commit history to see how I've been improved over time ⬇ \n "
-                     "https://github.com/pasindujr/HnditHelperBot/commits/master")
+                     "Inspect my commit history to see how I've been improved over time ⬇\nhttps://github.com/pasindujr/HnditHelperBot/commits/master")
 
 
 # Below code handles past papers
