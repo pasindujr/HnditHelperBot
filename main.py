@@ -12,25 +12,26 @@ shootPapers = pastpapers.PastPapers()
 shootNotes = notes.Notes()
 
 
-@bot.message_handler(commands=['start', ])
+@bot.message_handler(commands=['start'])
 def send_start(message):
-    bot.send_message(message.chat.id, "Hello " + message.chat.first_name + "! Type /help to get started.")
+    bot.send_message(message.chat.id,
+                     "Hello " + message.chat.first_name + "! Type /help or tap the button left to typing area to get started.")
 
 
 @bot.message_handler(commands=['about'])
 def send_about(message):
     bot.send_message(message.chat.id,
-                     "Designed by @pasindujr from ATI Kegalle. You can see my source code on GitHub \n https://github.com/pasindujr/HnditHelperBot")
+                     "Designed by @pasindujr from ATI Kegalle. The sole purpose of mine is to support the education of HNDIT students.\n Do you think something is broken or have an amazing idea to improve me, please let my master know.\n You can see my source code on GitHub.\n https://github.com/pasindujr/HnditHelperBot")
 
 
 @bot.message_handler(commands=['help', ])
 def send_help(message):
     bot.send_message(message.chat.id,
-                     'Welcome to HNDIT Helper Bot. Here you can find past papers and notes for HNDIT subjects and exams. Do you need /notes or /papers? You can type or select a option.')
+                     'Welcome to HNDIT Helper Bot. Here you can find past papers and notes for HNDIT subjects and exams. Do you need /notes or /papers? You can type or select an option.')
 
 
 @bot.message_handler(commands=['changelog'])
-def send_changeblog(message):
+def send_changelog(message):
     bot.send_message(message.chat.id,
                      "Inspect my commit history to see how I've been improved over time ⬇ \n "
                      "https://github.com/pasindujr/HnditHelperBot/commits/master")
