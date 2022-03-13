@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 import pastpapers
 import notes
+import timetables
 
 load_dotenv()
 API_KEY = os.getenv('API_KEY')
@@ -10,6 +11,7 @@ bot = telebot.TeleBot(API_KEY)
 
 shootPapers = pastpapers.PastPapers()
 shootNotes = notes.Notes()
+shootTimetables = timetables.Timetables()
 
 
 @bot.message_handler(commands=['start'])
@@ -355,10 +357,27 @@ def web_notes(message):
     shootNotes.web_notes(message)
 
 
+# Below code handles exam timetables.
+
+@bot.message_handler(commands=['timetables'])
+def select_year(message):
+    shootTimetables.select_year(message)
+
+
+@bot.message_handler(commands=['1st_year_timetable'])
+def first_year_timetable(message):
+    shootTimetables.first_year_timetable(message)
+
+
+@bot.message_handler(commands=['2nd_year_timetable'])
+def second_year_timetable(message):
+    shootTimetables.second_year_timetable(message)
+
+
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     bot.send_message(message.chat.id,
-                     'Invalid command! Please send me a valid command which starts with "/". Try /help')
+                     'Invalid command! Please send me a valid command which starts with "/" or try /help')
 
 
 bot.infinity_polling()
