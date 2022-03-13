@@ -450,6 +450,7 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2016-web.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2017-web-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2017-web.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2018-web-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2018-web.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2019-web.pdf']
 
