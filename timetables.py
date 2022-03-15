@@ -17,14 +17,12 @@ class Timetables():
 
     def first_year_timetable(self, message):
         files = ['https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/timetables/2020-1st-year.png']
-        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
         for file in files:
             bot.send_photo(message.chat.id, file, caption='2020 batch 1st year exam timetable')
 
     def second_year_timetable(self, message):
         files = ['https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/timetables/2020-2nd-year.png']
-        bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
         for file in files:
             bot.send_photo(message.chat.id, file, caption='2019 batch 2nd year exam timetable')
