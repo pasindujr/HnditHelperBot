@@ -25,6 +25,9 @@ def send_about(message):
     bot.send_message(message.chat.id,
                      "💡 Designed by @pasindujr from ATI Kegalle. The sole purpose of mine is to support the education of HNDIT students.\n💡 Do you think something is broken or have an amazing idea to improve me, please let my master know.\n💡 You can see my source code on GitHub.\nhttps://github.com/pasindujr/HnditHelperBot")
 
+    bot.send_video(message.chat.id,
+                   'https://drive.google.com/uc?export=download&id=1OLfS0BTxjy6cIIFJx6ugl5rK9SObK3zg', )
+
 
 @bot.message_handler(commands=['help', ])
 def send_help(message):
