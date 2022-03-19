@@ -455,7 +455,8 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2018-web-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2018-web.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2019-web-scheme.pdf',
-            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2019-web.pdf']
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2019-web.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/web/2020-web.pdf']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
