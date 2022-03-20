@@ -391,6 +391,7 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2017-enterprise-architecture-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2017-enterprise-architecture.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2018-enterprise-architecture-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2019-enterprise-architecture-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/enterprise-architecture/2019-enterprise-architecture.pdf']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
