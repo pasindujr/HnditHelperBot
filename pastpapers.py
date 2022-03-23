@@ -376,7 +376,8 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2018-comarchitecture-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2018-comarchitecture.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2019-comarchitecture-scheme.pdf',
-            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2019-comarchitecture.pdf']
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2019-comarchitecture.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/com-architecture/2020-comarchitecture.pdf']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
