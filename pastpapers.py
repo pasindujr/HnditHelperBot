@@ -470,6 +470,7 @@ class PastPapers():
     def english4_papers(self, message):
         files = [
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2015-english4.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2016-english4-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2016-english4.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2017-english4-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2017-english4.pdf',
