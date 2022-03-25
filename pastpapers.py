@@ -477,7 +477,8 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2018-english4-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2018-english4.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2019-english4-scheme.pdf',
-            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2019-english4.pdf']
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2019-english4.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/english/2020-english4.pdf']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
