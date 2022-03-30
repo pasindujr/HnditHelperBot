@@ -411,6 +411,7 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/foss/2017-foss-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/foss/2017-foss.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/foss/2018-foss-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/foss/2019-foss-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/foss/2019-foss.pdf']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
