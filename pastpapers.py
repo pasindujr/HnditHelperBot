@@ -446,7 +446,8 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/professional-issues/2017-professional-issues.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/professional-issues/2018-professional-issues-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/professional-issues/2019-professional-issues-scheme.pdf',
-            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/professional-issues/2019-professional-issues.pdf']
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/professional-issues/2019-professional-issues.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/professional-issues/2020-professional-issues.pdf']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
