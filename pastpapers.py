@@ -430,7 +430,8 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/mobile/2018-mobile-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/mobile/2018-mobile.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/mobile/2019-mobile-scheme.pdf',
-            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/mobile/2019-mobile.pdf']
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/mobile/2019-mobile.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/fourth-semester/mobile/2020-mobile.pdf']
 
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
