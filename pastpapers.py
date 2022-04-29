@@ -31,11 +31,13 @@ class PastPapers():
         bot.send_message(message.chat.id, "Choose a subject:", reply_markup=markup)
 
     def pca_papers(self, message):
-        files = ['https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2016-pca.pdf',
-                 'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2017-pca.pdf',
-                 'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2018-pca%20marking%20scheme.pdf',
-                 'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2018-pca.pdf',
-                 'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2019-pca.pdf']
+        files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2016-pca-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2016-pca.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2017-pca.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2018-pca%20marking%20scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2018-pca.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/pca/2019-pca.pdf']
         bot.send_message(message.chat.id, str(len(files)) + " File/s Incoming...")
 
         for file in files:
@@ -57,6 +59,7 @@ class PastPapers():
 
     def structured_programming_papers(self, message):
         files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/structured-programming/2016-structured-programming-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/structured-programming/2016-structured-programming.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/structured-programming/2017-structured-programming-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/structured-programming/2017-structured-programming.pdf',
@@ -112,6 +115,7 @@ class PastPapers():
     def maths_papers(self, message):
         files = [
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/maths/2016-maths-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/maths/2017-maths-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/maths/2017-maths.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/maths/2018-maths.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/first_semester/maths/2019-maths.pdf']
