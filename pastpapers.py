@@ -223,6 +223,7 @@ class PastPapers():
 
     def stats_papers(self, message):
         files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/stats/2016-stats-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/stats/2016-stats.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/stats/2017-stats-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/second_semester/stats/2017-stats.pdf',
