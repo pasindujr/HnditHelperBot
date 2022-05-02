@@ -262,8 +262,12 @@ class PastPapers():
 
     def oscs_papers(self, message):
         files = [
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2015-oscs-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2015-oscs.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2016-oscs.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2016-oscs-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2017-oscs-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2018-oscs.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2019-oscs.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/oscs/2020-oscs.pdf']
 
