@@ -315,7 +315,9 @@ class PastPapers():
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/rad/2016-rad-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/rad/2016-rad.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/rad/2017-rad-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/rad/2017-rad.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/rad/2018-rad-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/rad/2018-rad.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/rad/2019-rad-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/rad/2019-rad.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/rad/2020-rad.pdf']
