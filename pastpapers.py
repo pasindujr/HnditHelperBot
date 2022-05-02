@@ -279,7 +279,10 @@ class PastPapers():
     def itpm_papers(self, message):
         files = [
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/itpm/2015-itpm.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/blob/main/papers/third-semester/itpm/2016-itpm-scheme.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/itpm/2016-itpm.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/itpm/2017-itpm-scheme.pdf',
+            'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/itpm/2018-itpm.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/itpm/2019-itpm.pdf',
             'https://github.com/pasindujr/HnditHelperBot_pdfs/raw/main/papers/third-semester/itpm/2020-itpm.pdf']
 
